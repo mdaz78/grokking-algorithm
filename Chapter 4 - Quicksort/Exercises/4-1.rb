@@ -1,0 +1,10 @@
+# Write out the code for adding all the numbers in
+# an array recursively
+# sum of an array using recursion
+def sum(arr)
+  return arr[0] if arr.length == 1
+
+  arr[0] + sum(arr[1..-1])
+end
+
+p sum([1, 2, 3, 4])
